@@ -1,0 +1,32 @@
+services:
+  customer360:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: customer360:local
+    ports:
+      - "${C360_PORT:-8501}:8501"
+    environment:
+      C360_DATA_DIR: /app/data
+      C360_BOOTSTRAP_DEMO: ${C360_BOOTSTRAP_DEMO:-1}
+      C360_DEMO_CUSTOMERS: ${C360_DEMO_CUSTOMERS:-1800}
+      C360_DEMO_ORDERS: ${C360_DEMO_ORDERS:-36000}
+      C360_DEMO_SEED: ${C360_DEMO_SEED:-42}
+      C360_AUTH_REQUIRED: ${C360_AUTH_REQUIRED:-0}
+      C360_USERS_JSON: ${C360_USERS_JSON:-}
+    volumes:
+      - customer360-data:/app/data
+      - customer360-output:/app/output
+    restart: unless-stopped
+    init: true
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent http://127.0.0.1:8501/_stcore/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      start_period: 45s
+      retries: 3
+
+volumes:
+  customer360-data:
+  customer360-output:
+

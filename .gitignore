@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.streamlit/secrets.toml
+data/
+tmp/
+*.log
+output/qa/
+.chart-data-*/
+

@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "classification": "synthetic",
+    "seed": 42,
+    "coverage_start": "2024-01-01",
+    "coverage_end": "2026-08-31",
+    "currency": "USD",
+    "timezone": "UTC",
+    "note": "Fictional demo. USD-normalized amounts; no real exchange rates.",
+    "run_id": "de1471aaca31",
+    "built_at": "2026-09-29T06:37:02.514575+00:00",
+    "sources": [
+      {
+        "source": "crm_customers",
+        "input_rows": 1800,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 1800,
+        "sha256": "1797370c4a3b6445a10ce0b08f1e7ce334e6e8255843b07658a487dcbb1558ac",
+        "integration_rejected": 0
+      },
+      {
+        "source": "erp_products",
+        "input_rows": 80,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 80,
+        "sha256": "4f75c99afc8068cee2740faa8dc38249b19b40e155f31f23137d01338b935dc8",
+        "integration_rejected": 0
+      },
+      {
+        "source": "erp_stores",
+        "input_rows": 48,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 48,
+        "sha256": "ee0a4b1882d5d4fce90df84a8c13d38ad96c44106c579c9004508a3de9c67aaa",
+        "integration_rejected": 0
+      },
+      {
+        "source": "pos_orders",
+        "input_rows": 36022,
+        "invalid_rows": 1,
+        "duplicate_rows": 20,
+        "clean_rows": 36001,
+        "sha256": "c75dfc70e384f0f8289ef5b7bc69bfbe8686683b267954b35d21da65c9cf4a5a",
+        "integration_rejected": 1
+      },
+      {
+        "source": "payment_orders",
+        "input_rows": 36000,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 36000,
+        "sha256": "d80d610d67c5f1ad63f18e95c4b54d8ea1180eb2b3bdd8185be7862bed81a3f0",
+        "integration_rejected": 0
+      },
+      {
+        "source": "marketing_campaigns",
+        "input_rows": 96,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 96,
+        "sha256": "9cc33f34b2d96cf2e1786d3146d6d9715aee566f31294c00ada79a03558dbfb6",
+        "integration_rejected": 0
+      },
+      {
+        "source": "website_sessions",
+        "input_rows": 18000,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 18000,
+        "sha256": "c4b89edb6f6f1b51ba7502388eeaed6d5056165123282bd1483af909d7c0db51",
+        "integration_rejected": 0
+      },
+      {
+        "source": "mobile_sessions",
+        "input_rows": 18000,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 18000,
+        "sha256": "fe23a089f5cbd9f6d13ac35241caa38aa50cccffaaba0543659f819ddd674068",
+        "integration_rejected": 0
+      },
+      {
+        "source": "email_campaigns",
+        "input_rows": 32,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 32,
+        "sha256": "2f3ee3f4a4ec63aea4a104ab8c1f60ba40e0fd7cc3b502535cd5aa080d0733b1",
+        "integration_rejected": 0
+      },
+      {
+        "source": "social_campaigns",
+        "input_rows": 32,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 32,
+        "sha256": "4f07b838c36623d35bed596422ada0eceed8975d182e96ad63f7e20af012acaf",
+        "integration_rejected": 0
+      },
+      {
+        "source": "support_tickets",
+        "input_rows": 3600,
+        "invalid_rows": 0,
+        "duplicate_rows": 0,
+        "clean_rows": 3600,
+        "sha256": "e1e368ab6750c1d5eefcd7bcdfb873ad29a4a6fb15a105c3ed877e5f312af1c0",
+        "integration_rejected": 1654
+      }
+    ],
+    "pipeline_version": "1.0.0"
+  },
+  "scope": {
+    "start": "2025-09-01",
+    "end": "2026-08-31"
+  },
+  "metrics": {
+    "revenue": 4538561.27,
+    "gross_profit": 1838973.28,
+    "orders": 23890.0,
+    "buyers": 1789.0,
+    "aov": 189.97744956048555,
+    "repeat_rate": 0.9703745108999441,
+    "margin": 0.4051885984564444
+  },
+  "retention": {
+    "rate": 0.990409764603313,
+    "retained": 1136,
+    "eligible": 1147
+  },
+  "segments": [
+    {
+      "segment": "Champions",
+      "customers": 651,
+      "revenue": 4436783.700000002,
+      "recency_days": 17.1029185868,
+      "annual_value_proxy": 2729.6279420873
+    },
+    {
+      "segment": "Loyal",
+      "customers": 876,
+      "revenue": 1568866.399999999,
+      "recency_days": 29.7910958904,
+      "annual_value_proxy": 833.4953180806
+    },
+    {
+      "segment": "At risk",
+      "customers": 264,
+      "revenue": 429612.7500000003,
+      "recency_days": 158.6818181818,
+      "annual_value_proxy": 413.2403088801
+    },
+    {
+      "segment": "Developing",
+      "customers": 9,
+      "revenue": 3312.03,
+      "recency_days": 54.7777777778,
+      "annual_value_proxy": 362.4888685644
+    }
+  ],
+  "monthly": [
+    {
+      "period": "2025-09-01T00:00:00.000",
+      "revenue": 225510.07,
+      "orders": 1177
+    },
+    {
+      "period": "2025-10-01T00:00:00.000",
+      "revenue": 264476.14,
+      "orders": 1385
+    },
+    {
+      "period": "2025-11-01T00:00:00.000",
+      "revenue": 260831.96,
+      "orders": 1387
+    },
+    {
+      "period": "2025-12-01T00:00:00.000",
+      "revenue": 288526.19,
+      "orders": 1516
+    },
+    {
+      "period": "2026-01-01T00:00:00.000",
+      "revenue": 319487.61,
+      "orders": 1695
+    },
+    {
+      "period": "2026-02-01T00:00:00.000",
+      "revenue": 327969.83,
+      "orders": 1646
+    },
+    {
+      "period": "2026-03-01T00:00:00.000",
+      "revenue": 390068.1,
+      "orders": 2095
+    },
+    {
+      "period": "2026-04-01T00:00:00.000",
+      "revenue": 418146.15,
+      "orders": 2146
+    },
+    {
+      "period": "2026-05-01T00:00:00.000",
+      "revenue": 513258.28,
+      "orders": 2683
+    },
+    {
+      "period": "2026-06-01T00:00:00.000",
+      "revenue": 485810.65,
+      "orders": 2595
+    },
+    {
+      "period": "2026-07-01T00:00:00.000",
+      "revenue": 516665.32,
+      "orders": 2771
+    },
+    {
+      "period": "2026-08-01T00:00:00.000",
+      "revenue": 527810.97,
+      "orders": 2794
+    }
+  ],
+  "countries": [
+    {
+      "country": "GB",
+      "revenue": 702675.55,
+      "gross_profit": 286304.14,
+      "orders": 3756,
+      "buyers": 260
+    },
+    {
+      "country": "FR",
+      "revenue": 619980.19,
+      "gross_profit": 251187.32,
+      "orders": 3257,
+      "buyers": 233
+    },
+    {
+      "country": "DE",
+      "revenue": 605886.17,
+      "gross_profit": 245824.74,
+      "orders": 3174,
+      "buyers": 224
+    },
+    {
+      "country": "AE",
+      "revenue": 560009.67,
+      "gross_profit": 226482.44,
+      "orders": 2908,
+      "buyers": 234
+    },
+    {
+      "country": "PK",
+      "revenue": 524146.84,
+      "gross_profit": 215520.93,
+      "orders": 2831,
+      "buyers": 228
+    },
+    {
+      "country": "CA",
+      "revenue": 513749.08,
+      "gross_profit": 205989.72,
+      "orders": 2660,
+      "buyers": 202
+    },
+    {
+      "country": "US",
+      "revenue": 513515.24,
+      "gross_profit": 207801.21,
+      "orders": 2692,
+      "buyers": 205
+    },
+    {
+      "country": "AU",
+      "revenue": 498598.53,
+      "gross_profit": 199862.78,
+      "orders": 2612,
+      "buyers": 203
+    }
+  ],
+  "forecast": [
+    {
+      "period": "2026-09-01T00:00:00.000",
+      "forecast": 527810.97,
+      "lower": 464173.2458669093,
+      "upper": 591448.6941330907
+    },
+    {
+      "period": "2026-10-01T00:00:00.000",
+      "forecast": 527810.97,
+      "lower": 437813.6374524255,
+      "upper": 617808.3025475745
+    },
+    {
+      "period": "2026-11-01T00:00:00.000",
+      "forecast": 527810.97,
+      "lower": 417587.1985234348,
+      "upper": 638034.7414765651
+    },
+    {
+      "period": "2026-12-01T00:00:00.000",
+      "forecast": 527810.97,
+      "lower": 400535.5217338186,
+      "upper": 655086.4182661814
+    },
+    {
+      "period": "2027-01-01T00:00:00.000",
+      "forecast": 527810.97,
+      "lower": 385512.6929050303,
+      "upper": 670109.2470949697
+    },
+    {
+      "period": "2027-02-01T00:00:00.000",
+      "forecast": 527810.97,
+      "lower": 371931.0174819288,
+      "upper": 683690.9225180711
+    }
+  ],
+  "diagnostics": {
+    "model": "Last-month baseline",
+    "holdout_months": 3,
+    "model_mae": 117473.12628146204,
+    "baseline_mae": 15135.786666666643,
+    "training_months": 12,
+    "interval": "Approximate 95% residual bands; uncalibrated, independent-error assumption. Not seasonal."
+  },
+  "quality": [
+    {
+      "source": "crm_customers",
+      "input_rows": 1800,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 1800,
+      "sha256": "1797370c4a3b6445a10ce0b08f1e7ce334e6e8255843b07658a487dcbb1558ac",
+      "integration_rejected": 0
+    },
+    {
+      "source": "erp_products",
+      "input_rows": 80,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 80,
+      "sha256": "4f75c99afc8068cee2740faa8dc38249b19b40e155f31f23137d01338b935dc8",
+      "integration_rejected": 0
+    },
+    {
+      "source": "erp_stores",
+      "input_rows": 48,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 48,
+      "sha256": "ee0a4b1882d5d4fce90df84a8c13d38ad96c44106c579c9004508a3de9c67aaa",
+      "integration_rejected": 0
+    },
+    {
+      "source": "pos_orders",
+      "input_rows": 36022,
+      "invalid_rows": 1,
+      "duplicate_rows": 20,
+      "clean_rows": 36001,
+      "sha256": "c75dfc70e384f0f8289ef5b7bc69bfbe8686683b267954b35d21da65c9cf4a5a",
+      "integration_rejected": 1
+    },
+    {
+      "source": "payment_orders",
+      "input_rows": 36000,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 36000,
+      "sha256": "d80d610d67c5f1ad63f18e95c4b54d8ea1180eb2b3bdd8185be7862bed81a3f0",
+      "integration_rejected": 0
+    },
+    {
+      "source": "marketing_campaigns",
+      "input_rows": 96,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 96,
+      "sha256": "9cc33f34b2d96cf2e1786d3146d6d9715aee566f31294c00ada79a03558dbfb6",
+      "integration_rejected": 0
+    },
+    {
+      "source": "website_sessions",
+      "input_rows": 18000,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 18000,
+      "sha256": "c4b89edb6f6f1b51ba7502388eeaed6d5056165123282bd1483af909d7c0db51",
+      "integration_rejected": 0
+    },
+    {
+      "source": "mobile_sessions",
+      "input_rows": 18000,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 18000,
+      "sha256": "fe23a089f5cbd9f6d13ac35241caa38aa50cccffaaba0543659f819ddd674068",
+      "integration_rejected": 0
+    },
+    {
+      "source": "email_campaigns",
+      "input_rows": 32,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 32,
+      "sha256": "2f3ee3f4a4ec63aea4a104ab8c1f60ba40e0fd7cc3b502535cd5aa080d0733b1",
+      "integration_rejected": 0
+    },
+    {
+      "source": "social_campaigns",
+      "input_rows": 32,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 32,
+      "sha256": "4f07b838c36623d35bed596422ada0eceed8975d182e96ad63f7e20af012acaf",
+      "integration_rejected": 0
+    },
+    {
+      "source": "support_tickets",
+      "input_rows": 3600,
+      "invalid_rows": 0,
+      "duplicate_rows": 0,
+      "clean_rows": 3600,
+      "sha256": "e1e368ab6750c1d5eefcd7bcdfb873ad29a4a6fb15a105c3ed877e5f312af1c0",
+      "integration_rejected": 1654
+    }
+  ]
+}
